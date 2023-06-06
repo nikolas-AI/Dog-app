@@ -44,13 +44,27 @@
         <section>
             <h2>Cat Form</h2>
             <form action="index.html">
-                <label><input type="radio" id="indoor" name="in-outdoor">Indoor</label>
-                <label><input type="radio" id="outdoor" name="in-outdoor">Outdoor</label>
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input type="radio" id="indoor" name="in-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input type="radio" id="outdoor" name="in-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input type="checkbox" id="introvert" name="personality" value="introvert" checked>
+                    <label for="introvert"> Introvert</label>
+                    <input type="checkbox" id="extrovert" name="personality" value="extrovert">
+                    <label for="extrovert"> Extrovert</label>
+                </fieldset>
+                
                 <input type="text" name="catpicurl" placeholder="cat photo url" required>
                 <button type="submit">Submit</button>
 
             </form>
         </section>
     </main>
+    <footer>
+        <p>No Copyright - <a href="www.linked.com/in/prashant-subedi" target="_blank"> Zek Designs</a></p>
+    </footer>
 </body>
 </html>
